@@ -1,0 +1,35 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+  font-family: 'good-foot';
+  src: url('../fonts/goodfoot.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ostrich';
+  src: url('../fonts/OstrichSans-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ostrich-light';
+  src: url('../fonts/OstrichSans-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ostrich-medium';
+  src: url('../fonts/OstrichSans-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
