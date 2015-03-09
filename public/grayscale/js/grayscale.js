@@ -4,9 +4,14 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
+    var introTop = $('.btn-circle').offset().top;
+    var introHeight = $('.btn-circle').height();
+    var offset =  introHeight + introTop;
+    if ($(".navbar").offset().top > offset) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
@@ -22,12 +27,24 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    $('#work-carousel').hide();
+
+
+    $('.overlay').bind('click', function(event) {
+        // $('.collapse').slideToggle(500);
+        $("#work-carousel").slideToggle('500');
+
+    });
+
 });
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
 
 // Google Maps Scripts
 // When the window has finished loading create our google map below

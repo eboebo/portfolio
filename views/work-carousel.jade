@@ -1,0 +1,32 @@
+div#work-carousel.carousel.slide&attributes({'data-ride':'carousel'})
+    ol.carousel-indicators
+        li.active&attributes({'data-target':'#work-carousel', 'data-slide-to':'0'})
+        li&attributes({'data-target':'#work-carousel', 'data-slide-to':'1'})
+        li&attributes({'data-target':'#work-carousel', 'data-slide-to':'2'})
+    div.carousel-inner&attributes({'role':'listbox'})
+        div.item.active
+            div.container
+                img(src="http://www.mojaveinc.com/wp-content/uploads/2013/07/ios_app_ux.jpg", alt="First slide")
+                div.carousel-caption
+                    h1 Example Headline
+                    p This is a description on the project
+        div.item
+            div.container
+                img(src="http://www.mojaveinc.com/wp-content/uploads/2013/07/ios_app_ux.jpg", alt="First slide")
+                div.carousel-caption
+                    h1 Example Headline
+                    p This is a description on the project
+        div.item
+            div.container
+                img(src="http://www.mojaveinc.com/wp-content/uploads/2013/07/ios_app_ux.jpg", alt="First slide")
+                div.carousel-caption
+                    h1 Example Headline
+                    p This is a description on the project
+        a.left.carousel-control(href="#work-carousel", role="button", data-slide="prev")
+            span.carousel-btn.carousel-btn-left
+                i.fa.fa-angle-double-left.animated
+            span.sr-only Previous
+        a.right.carousel-control(href="#work-carousel", role="button", data-slide="next")
+            span.carousel-btn.carousel-btn-right
+                i.fa.fa-angle-double-right.animated
+            span.sr-only Next
