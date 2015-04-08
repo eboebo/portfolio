@@ -32,6 +32,8 @@ html {
 h1,
 h2,
 h3,
+
+
 h4,
 h5,
 h6 {
@@ -39,7 +41,15 @@ h6 {
     text-transform: lowercase;
     font-family: "good-foot","Helvetica Neue",Helvetica,Arial,sans-serif;
     letter-spacing: 1px;
-    font-size: 68px;
+    font-size: 60px;
+}
+
+.section-brand
+{
+    margin: 0 0 35px;
+    font-size: 48px;
+     font-family: "ostrich","Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
 
 p {
@@ -51,7 +61,7 @@ p {
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.6;
     }
 }
@@ -69,10 +79,6 @@ a:focus {
     color: #6f4c6b;
 }
 
-.light {
-    font-weight: 400;
-}
-
 .btn-circle {
     width: 70px;
     height: 70px;
@@ -81,7 +87,7 @@ a:focus {
 /*    border: 4px solid #000;
 */    border-radius: 35px;
     font-size: 60px;
-    color: #000;
+    color: #fff;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -91,7 +97,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #000;
+    color: #fff;
 /*    background: rgba(255,255,255,.1);
 */}
 
@@ -162,7 +168,7 @@ a:focus {
 }
 
 .navbar-brand span {
-     font-size: 60px;
+     font-size: 48px;
      font-family: "ostrich","Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -172,8 +178,8 @@ a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle {
 /*    padding: 4px 6px;
-*/    color: #fff;
-    font-size: 68px;
+*/    color: #C7B095;
+    font-size: 40px;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -182,10 +188,10 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #C7B095;
     margin: 10px;
     font-size: 40px;
-    font-family: "good-foot","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "ostrich-medium","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .navbar-custom .nav li.active {
@@ -207,9 +213,9 @@ a:focus {
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
-.navbar-custom .nav li a.active {
-        background-color: #fff;
-        color:#e3ba00;
+.navbar-custom .nav  li a.active {
+        background-color: #C7B095;
+        color:#fff;
 
 }
 
@@ -226,18 +232,11 @@ a:focus {
 
     .top-nav-collapse {
         padding: 10;
-        /*background-color: #e3ba00;*/
-    /*    background-color: #6bb8c0;*/
-            background-color: #fff;
-
-    }
-
-    .navbar-custom.top-nav-collapse {
-        /*border-bottom: 1px solid #000;*/
+        background-color: #C7B095;
     }
 
     .navbar-custom.top-nav-collapse a {
-       color:#000;
+       color:#fff;
     }
 }
 
@@ -250,9 +249,8 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #000;
-/*    background: url(../img/woodfloors.jpg) no-repeat bottom center scroll;
-*/    background-color: #fff;
+    color: #fff;
+    background-color: #C7B095;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -265,10 +263,9 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-family: "ostrich","Helvetica Neue",Helvetica,Arial,sans-serif;
-
-    font-size: 128px;
+    font-size: 100px;
 }
 
 .intro .intro-body .intro-text {
@@ -300,11 +297,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     padding-bottom: 0px;
-    color: #fff;
-/*    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-   background-color: #6f4c6b;*/
-
-   background-color: #C7B095;
+    color: #000;
+   background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -318,8 +312,7 @@ a:focus {
     width: 100%;
     padding: 10px 0;
     color: #000;
-/*    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-*/    background-color: #fff;
+    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -329,14 +322,14 @@ a:focus {
 .work-text {
     top: 30%;
     position:relative;
-    visibility:hidden;
-    color: #000;
+    color: #fff;
+    visibility: hidden;
 }
 
 .work-title
 {
-    font-family: "ostrich","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 48px;
+    font-family: "ostrich-medium","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 36px;
 }
 
 .overlay {
@@ -346,7 +339,9 @@ a:focus {
     position: absolute;
 }
 .overlay:hover {
-    background-color: #fff;
+        /*background-color: #eedbd4;*/
+        background-color: #e3b9ab;
+        color:#fff;
 }
 
 .overlay:hover .work-text
@@ -354,12 +349,22 @@ a:focus {
         visibility:visible;
 }
 
+.work-section .col-md-4.active .work-text
+{
+        visibility:visible;
+}
+
+.work-section .col-md-4.active .overlay
+{
+    background-color: #fff;
+}
+
 .work-content
 {
     width: 100%;
     height: auto;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
 /* CUSTOMIZE THE CONTAZT SECTION
@@ -368,9 +373,9 @@ a:focus {
 .contact-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
+    color: #000;
 /*    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-*/    background-color: #BB8A84;
+*/    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -386,10 +391,10 @@ a:focus {
 
 footer {
     padding: 50px 0;
-    color: #000;
+    color: #fff;
     font-family: "good-foot","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 26px;
-    background-color: #fff;
+    background-color: #bb8a84;
 }
 
 footer p {
@@ -419,25 +424,25 @@ footer p {
 
 .btn {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: "ostrich-medium","Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    font-size: 28px;
 }
 
 .btn-default {
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #64584B;
+    color: #64584B;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #fff;
+    border: 1px solid #64584B;
     outline: 0;
-    color: #BB8A84;
-    background-color: #fff;
+    color: #fff;
+    background-color: #64584B;
 }
 
 ul.banner-social-buttons {
@@ -482,32 +487,11 @@ img::-moz-selection {
     background: 0 0;
 }
 
+.work-image {
+    margin: 0px auto;
+}
+
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-/* COLORS */
-
-.tan {
-    background-color: #C7B095
-}
-
-.light_pink {
-    background-color: #EEDBD4
-}
-
-.brown {
-    background-color: #64584B;
-}
-
-.mid-pink{
-    background-color: #E3B9AB;
-}
-
-.dark-pink {
-    background-color: #BB8A84;
-}
-
-.offwhite {
-    background-color: #F4EFEA;
-}

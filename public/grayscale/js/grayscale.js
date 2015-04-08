@@ -27,16 +27,6 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-
-    $('#work-carousel').hide();
-
-
-    $('.overlay').bind('click', function(event) {
-        // $('.collapse').slideToggle(500);
-        $("#work-carousel").slideToggle('500');
-
-    });
-
 });
 
 // Closes the Responsive Menu on Menu Item Click

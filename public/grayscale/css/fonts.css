@@ -29,6 +29,20 @@
 }
 
 @font-face {
+  font-family: 'moderne';
+  src: url('../fonts/ModerneSans.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'axis';
+  src: url('../fonts/axis.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-style: normal;
