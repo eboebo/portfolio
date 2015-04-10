@@ -324,12 +324,14 @@ a:focus {
     position:relative;
     color: #fff;
     visibility: hidden;
+    font-size: 18px;
 }
 
 .work-title
 {
-    font-family: "ostrich-medium","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 36px;
+/*    margin: 0px;
+*/    font-family: "ostrich-medium","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 40px;
 }
 
 .overlay {
